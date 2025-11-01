@@ -1,0 +1,314 @@
+/* すべてのページに適用される設定 */
+html{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+*{
+    box-sizing: border-box;
+    max-width: 2000px;
+    margin: 0 auto 0 auto;
+    font-family: "Gruppo","Noto Serif JP", serif;
+    font-weight: 200;
+    font-style: normal;
+
+}
+h1{
+    letter-spacing: 20px;
+}
+h2{
+    letter-spacing: 10px;
+    font-size: 50px;
+    text-align: center;
+}
+
+body{
+    height: 1280px;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+main{
+    width: 85%;
+}
+
+/* すべてのページに適応 - ヘッダー */
+#header {
+    display: flex;
+}
+#header .logo{
+    margin: 30px auto 0 30px;
+    max-width: 200px;
+}
+#header .nav_icon{
+    margin: 30px 30px 0 auto;
+}   
+/* ナビゲーション */
+.nav{
+    margin: 10px;
+    font-weight: 200;
+    font-style: normal;
+}
+.nav ul{
+    max-width: 500px;
+    padding: 0;
+    border-radius: 10px;
+    list-style-type: none;
+    display: flex;
+    border: 1px solid #000;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.nav li a {
+    display: inline-block;
+    padding: 5px 21px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 86, 130);
+    white-space: nowrap;
+    border-right: 1px solid #000;
+}
+.nav li a:hover {
+        color: #c00;
+        background-color: #fff;
+}
+
+.nav li:first-child a{
+    border-radius: 10px 0 0 10px;
+}
+.nav li:last-child a{
+    border-radius: 0 10px 10px 0;
+    border: none;
+}
+
+/* アイコン */
+.icon ul{
+    list-style-type: none;
+    margin-top: 20px;
+    text-align: right;
+    max-width: 500px;
+}
+.icon li{
+    display: inline-block;
+    max-width: 40px;
+    margin: 0 13px 0 0;
+}
+
+/* すべてのページに適用 - ヒーロー */
+
+.hero{
+    text-align: center;
+    margin:0 0 0 0;
+}
+.hero img{
+    max-width: 250px;
+}
+.hero h1{
+    margin: 120px 100px;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+/* すべてのページに適応 - メイン */
+
+/* すべてのページに適応 - フッダー */
+#footer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 200px;
+    padding: 30px 0 30px 0;
+    border-top: 1px solid #000;
+}
+#footer .logo{
+    max-width: 200px;
+}
+#footer .icon{
+    position: absolute;
+    right: 30px;
+}
+
+/* 個別のスタイル */
+/* top.html */
+/* contents1 */
+#contents1{
+    display: flex;
+}
+#contents1 h2{
+    padding-bottom: 20px;
+}
+#contents1 li,p{
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+#news,#new_release{
+    flex: 1;
+    max-width: 750px;
+    margin: 0 auto 50px auto;
+    text-align: center;
+}
+/* news */
+#news ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    list-style-type: none;
+    border-top: 1px solid #000;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+#news li{
+    padding: 50px 0 50px 20px;
+}
+#news{
+    border-bottom: 1px solid #000;
+}
+#news li:first-child{
+    padding-right: 30px;
+}
+#news li:last-child{
+    padding-right: 50px;
+}
+#news a{
+    padding: auto 100px auto 100px;
+}
+/* new_release */
+#new_release{
+    border-bottom: 1px solid #000;
+}
+.new_release{
+    display: flex;
+    border-top: 1px solid #000;
+    padding: 30px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.jacket,.release_inf{
+    flex: 1;
+}
+#new_release img{
+    width: 250px;
+}
+.release_inf{
+    margin: auto 0;
+}
+.release_inf p{
+    line-height: 1.5em;
+}
+/* mv */
+.mv_title{
+    margin: 150px auto 20px auto;
+}
+#mv{
+    display: flex;
+    margin-top: 50px;
+}
+.mv1 .mv2{
+    flex: 1;
+}
+#mv p{
+    text-align: center;
+    width: 100px;       /* 幅を固定 */
+  height: 40px;      /* 高さを固定 */
+  overflow: hidden;
+}
+/* contact */
+.contact{
+    text-align: center;
+}
+.contact h2{
+    margin: 200px auto 30px auto;
+}
+.contact p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.contact input,textarea{
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 500px;
+}
+
+
+/* Profile */
+#profile{
+    margin: 50px 0 0 0;
+    display: flex;
+}
+.af{
+    max-width: 400px;
+}
+.introduction{
+    max-width: 700px;
+    margin: auto auto auto 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+/* biography */
+#biography,#discography{
+    flex: 1;
+}
+#biography{
+    max-width: 600px;
+}
+#biography table{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* discography */
+#discography{
+    max-width: 600px;
+}
+.future,.abiding,.zane{
+    display: flex;
+    border-top: 1px solid #000;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.jacket{
+    padding: 30px 0;
+}
+#discography .zane{
+    border-bottom: 1px solid #000;
+}
+#discography img{
+    max-width: 200px;
+    padding: 0 0 0 30px;
+}
+.career{
+    margin-top: 100px;
+}
+.release_inf a{
+    display: block;
+    margin: 5px auto 0 0;
+    width: 170px;
+    text-align: center;
+}
+.release_inf a:link{
+    margin-top: 10px;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    color: rgb(0, 86, 130);
+    border: 1px solid #000;
+    text-decoration: none;
+}
+.release_inf a:visited{
+    color: rgb(0, 86, 130);
+}
+.release_inf a:hover{
+    color: #c00;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+.release_inf a:active{
+    color: #c00;
+}
+
+/* news */
+.news_page{
+    display: flex;
+}
+.news_page .newes{
+    margin: 0 100px;
+    text-align: center;
+}
